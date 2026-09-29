@@ -1,0 +1,24 @@
+name: Bug report
+description: Something isn't working
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Never paste tokens or passwords.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: recipesage-mcp version
+  - type: dropdown
+    id: instance
+    attributes:
+      label: RecipeSage instance
+      options: [Hosted (recipesage.com), Self-hosted]
+  - type: input
+    id: client
+    attributes:
+      label: MCP client (e.g. Claude Desktop, Claude Code)
